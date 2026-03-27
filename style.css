@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass container */
+.container {
+  width: 520px;   /* increase from 430px */
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Row */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+#taskInput {
+  flex: 2;
+}
+
+#dateInput, #timeInput {
+  flex: 1;
+}
+
+
+.input-row input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+
+
+/* Add Button */
+#addBtn {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap; /* prevents breaking */
+}
+
+#addBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.controls button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+/* Search */
+#search {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: rgba(255,255,255,0.15);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Task Info */
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Date + Time */
+.date {
+  font-size: 12px;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+/* Delete Button */
+li button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Empty Message */
+#emptyMsg {
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
