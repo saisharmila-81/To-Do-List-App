@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glassy To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>✨ What needs to be done?</h1>
+
+  <!-- Input Row -->
+  <div class="input-row">
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <input type="date" id="dateInput">
+    <input type="time" id="timeInput">
+    <button id="addBtn">➕ Add Task</button>
+  </div>
+
+  <!-- Filters -->
+  <div class="controls">
+    <button onclick="filterTasks('all')">All</button>
+    <button onclick="filterTasks('active')">Active</button>
+    <button onclick="filterTasks('completed')">Completed</button>
+    <button onclick="clearCompleted()">Clear</button>
+  </div>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="🔍 Search tasks...">
+
+  <!-- Task List -->
+  <ul id="taskList"></ul>
+
+  <p id="emptyMsg">No tasks yet. Add your first task! ✨</p>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span id="stats">0 total • 0 completed • 0 active</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
